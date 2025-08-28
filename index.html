@@ -1,1 +1,131 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Fundamentals</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>JavaScript Fundamentals Mastery</h1>
+            <p>Demonstrating Variables, Conditionals, Functions, Loops, and DOM Manipulation</p>
+        </header>
+        
+        <div class="grid">
+            <!-- Part 1: JavaScript Basics -->
+            <div class="content-section">
+                <h2>Part 1: JavaScript Basics</h2>
+                <div class="card">
+                    <h3>User Input & Conditional Logic</h3>
+                    <input type="number" id="ageInput" placeholder="Enter your age">
+                    <button onclick="checkAge()">Check Eligibility</button>
+                    <div id="ageOutput" class="output"></div>
+                </div>
+                
+                <div class="card">
+                    <h3>String Operations</h3>
+                    <input type="text" id="textInput" placeholder="Enter some text">
+                    <button onclick="processText()">Process Text</button>
+                    <div id="textOutput" class="output"></div>
+                </div>
+            </div>
+            
+            <!-- Part 2: JavaScript Functions -->
+            <div class="content-section">
+                <h2>Part 2: JavaScript Functions</h2>
+                <div class="card">
+                    <h3>Calculate Total Price</h3>
+                    <input type="number" id="priceInput" placeholder="Enter price">
+                    <input type="number" id="quantityInput" placeholder="Enter quantity">
+                    <button onclick="calculateTotal()">Calculate Total</button>
+                    <div id="totalOutput" class="output"></div>
+                </div>
+                
+                <div class="card">
+                    <h3>Format Name</h3>
+                    <input type="text" id="firstName" placeholder="First Name">
+                    <input type="text" id="lastName" placeholder="Last Name">
+                    <button onclick="formatName()">Format Name</button>
+                    <div id="nameOutput" class="output"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Part 3: JavaScript Loops -->
+        <div class="content-section">
+            <h2>Part 3: JavaScript Loops</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>For Loop: Countdown</h3>
+                    <input type="number" id="countdownInput" placeholder="Enter number" value="5">
+                    <button onclick="startCountdown()">Start Countdown</button>
+                    <div id="countdownOutput" class="output"></div>
+                </div>
+                
+                <div class="card">
+                    <h3>While Loop: Number Guessing</h3>
+                    <button onclick="startGuessingGame()">Start Game</button>
+                    <div id="gameOutput" class="output"></div>
+                </div>
+                
+                <div class="card">
+                    <h3>ForEach: User List</h3>
+                    <button onclick="processUsers()">Process Users</button>
+                    <ul id="userList" class="user-list output"></ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Part 4: DOM Manipulation -->
+        <div class="content-section">
+            <h2>Part 4: DOM Manipulation</h2>
+            <div class="interactive-section">
+                <div class="interactive-item">
+                    <h3>Toggle Theme</h3>
+                    <button id="themeToggle">Toggle Dark/Light Mode</button>
+                </div>
+                
+                <div class="interactive-item">
+                    <h3>Add New Item</h3>
+                    <input type="text" id="newItemInput" placeholder="Enter item">
+                    <button onclick="addNewItem()">Add Item</button>
+                    <ul id="itemList"></ul>
+                </div>
+                
+                <div class="interactive-item">
+                    <h3>Change Box Color</h3>
+                    <div id="colorBox" class="color-box" style="background-color: #6a11cb;"></div>
+                    <button onclick="changeColor()">Change Color</button>
+                </div>
+            </div>
+            
+            <div class="interactive-section">
+                <div class="interactive-item">
+                    <h3>Interactive List</h3>
+                    <ul id="interactiveList">
+                        <li>Task 1 <button onclick="completeTask(0)">Complete</button></li>
+                        <li>Task 2 <button onclick="completeTask(1)">Complete</button></li>
+                        <li>Task 3 <button onclick="completeTask(2)">Complete</button></li>
+                    </ul>
+                </div>
+                
+                <div class="interactive-item">
+                    <h3>Dynamic Content</h3>
+                    <button onclick="addParagraph()">Add Paragraph</button>
+                    <button onclick="removeLastParagraph()">Remove Last Paragraph</button>
+                    <div id="dynamicContent"></div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>JavaScript Fundamentals Assignment &copy; 2023</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
